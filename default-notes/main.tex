@@ -1,0 +1,122 @@
+\documentclass[11pt,a4paper]{paper}
+
+% Pacotes para o português.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{cite}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{indentfirst}
+\usepackage{url}
+\usepackage{array, makecell} %
+\usepackage{mathtools}
+\usepackage{geometry}
+\usepackage{bm}
+\geometry{a4paper,left=2cm, right=2cm, top=2cm,bottom=2cm}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{caption}
+\usepackage{setspace}
+\usepackage{breakcites}
+\usepackage{float}
+\usepackage{lipsum}
+%\usepackage{dsfont}
+\usepackage{booktabs}
+%\usepackage{abntex2cite}
+\usepackage{placeins}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{hyperref}
+\usepackage{lmodern}
+%\usepackage{times}
+%\usepackage{pifont}
+%\usepackage{tocbibind}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{pgfplots}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{natbib}
+
+\let\vbm\mathbf
+
+\makeatletter
+\hypersetup{
+	pdfkeywords={research project},
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=black,      	% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4,
+}
+\makeatother
+
+\let\vbm\mathbf
+
+%\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{tcolorbox} % Para caixas de destaque
+% Estilo de título de seção
+\newcommand{\phase}[2]{
+    \vspace{0.5cm}
+    \noindent{\Large \textbf{\textcolor{primary}{#1}} \hfill \textit{#2}}
+    \par\vspace{0.2cm}\hrule\vspace{0.3cm}
+}
+
+% Caixa de Essência
+\newtcolorbox{essencebox}{
+    colback=boxbg,
+    colframe=primary,
+    title=\textbf{�� Essência},
+    arc=3mm
+}
+
+% Comando para impacto/conclusão (seta)
+\newcommand{\impact}[1]{
+    \vspace{0.1cm}
+    \noindent\hspace{0.5cm} $\Rightarrow$ \textit{\textcolor{primary}{#1}}
+    \vspace{0.2cm}
+}
+
+
+\begin{document}
+
+\onehalfspacing
+
+\pagestyle{fancy}
+\lhead[\footnotesize{Notes on (...)}]{\footnotesize{Notes on (...)}}
+\chead[]{}
+\rhead[\footnotesize{jpeters@usp.br \\ joao.peters@ieee.org}]{\footnotesize{jpeters@usp.br \\ joao.peters@ieee.org}}
+
+\lfoot[]{}
+\cfoot[\small{LACSEP @ EESC-USP}]{\small{LACSEP @ EESC-USP}}
+\rfoot[]{}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\begin{center}
+     UNIVERSITY OF SAO PAULO\\
+     SAO CARLOS SCHOOL OF ENGINEERING\\
+     DEPARTMENT OF ELECTRICAL AND COMPUTER ENGINEERING\\
+     LABORATORY OF ANALYSIS AND CONTROL OF ELECTRICAL POWER SYSTEMS (LACSEP)\\
+\end{center}
+
+\tableofcontents
+\newpage
+
+%\input{textual/}
+
+\newpage
+
+\bibliographystyle{ieeetr}
+\bibliography{bibliography}
+
+
+
+\end{document}
